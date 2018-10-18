@@ -1,0 +1,10 @@
+{
+  "package_name": "My Project",
+  "package_description": "My Project description",
+  "repo_name": "{{ cookiecutter.package_name.lower()|replace(' ', '-')|replace('_', '-') }}",
+  "app_name": "{{ cookiecutter.repo_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "app_config_name": "{{ cookiecutter.app_name.replace('_', ' ')|title()|replace(' ', '') }}Config",
+  "author_name": "Toni Colom",
+  "author_email": "{{ cookiecutter.author_name.lower()|replace(' ', '-') }}@example.com",
+  "github_username": "yourname"
+}
