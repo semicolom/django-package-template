@@ -10,7 +10,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='{{ cookiecutter.repo_name }}',
     version='0.0.1',
-    packages=find_packages(),
+    packages=find_packages(exclude=("tests",)),
     include_package_data=True,
     description='{{ cookiecutter.package_description }}',
     long_description=README,
