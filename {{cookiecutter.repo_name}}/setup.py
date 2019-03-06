@@ -14,6 +14,7 @@ setup(
     include_package_data=True,
     description='{{ cookiecutter.package_description }}',
     long_description=README,
+    long_description_content_type="text/markdown",
     author='{{ cookiecutter.author_name }}',
     author_email='{{ cookiecutter.author_email }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
